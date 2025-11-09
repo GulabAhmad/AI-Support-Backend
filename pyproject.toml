@@ -1,0 +1,27 @@
+[project]
+name = "contactsupport"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gulab Ahmad", email = "gulabahmad724@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.121.0",
+    "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.2.1",
+    "sqlmodel>=0.0.27",
+    "uvicorn[standard]>=0.27.0",
+    "google-generativeai>=0.3.0",
+    "openai>=1.12.0",
+    "google-genai>=1.49.0",
+    "openai-agents>=0.5.0",
+]
+
+[project.scripts]
+contactsupport = "contactsupport:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
